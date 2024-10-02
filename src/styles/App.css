@@ -1,0 +1,16 @@
+:root {
+  font-family: "Nanum Gothic";
+  --purple: #8e43e7; /* 보라색 */
+  --gray: #f2f4f8; /* 밝은 회색 */
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.mw {
+  max-width: 1200px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  border: 1px solid red;
+}
