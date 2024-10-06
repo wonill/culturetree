@@ -29,7 +29,7 @@ const TicketOpen = () => {
   if (error) return <div>에러: {error}</div>;
 
   if (events.length < 2) {
-    return <div>이벤트가 충분하지 않습니다.</div>;
+    return;
   }
 
   let sorted = events

@@ -1,17 +1,16 @@
 .shows {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .showCard {
   flex: 1;
   margin: 0 10px;
   text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 1px solid var(--gray);
   padding: 10px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .showImage {
