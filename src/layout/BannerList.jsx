@@ -27,7 +27,7 @@ export default function BannerList() {
         loop={true}
         onBeforeInit={(swiper) => {
           swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.params.navigation.nexDtEl = nextRef.current;
         }}
       >
         <SwiperSlide className={style.swiper_slide}>

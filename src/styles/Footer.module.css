@@ -1,0 +1,17 @@
+.Footer {
+  border-top: solid 2px var(--gray);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.copyright_info {
+  font-size: 1.3rem;
+  font-weight: 700;
+}

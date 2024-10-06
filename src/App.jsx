@@ -2,6 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./layout/Header.jsx";
 import MainPage from "./pages/MainPage";
+import Footer from "./layout/Footer.jsx";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
