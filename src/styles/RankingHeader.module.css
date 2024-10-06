@@ -1,0 +1,26 @@
+.rankingHeader {
+  text-align: center;
+  margin-top: 8rem;
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.navButton {
+  background-color: white;
+  border: 1px solid var(--gray);
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navButton.active {
+  background-color: var(--purple);
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,79 @@
+.rankingContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.navButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navButton:hover {
+  background-color: #e0e0e0;
+}
+
+.shows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.showCard {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.showImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cardTitle {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.rankingList {
+  border-top: 2px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.listItem:last-child {
+  border-bottom: none;
+}
+
+.listItem span {
+  flex: 1;
+  text-align: center;
+}

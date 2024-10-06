@@ -47,12 +47,12 @@ export default function BannerList() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className={style.btnPrev} ref={prevRef}>
+      {/* <div className={style.btnPrev} ref={prevRef}>
         <i className="fa-solid fa-chevron-left"></i>
       </div>
       <div className={style.btnNext} ref={nextRef}>
         <i className="fa-solid fa-chevron-right"></i>
-      </div>
+      </div> */}
     </div>
   );
 }

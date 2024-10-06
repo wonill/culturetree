@@ -1,0 +1,21 @@
+.rankingList {
+  border-top: 2px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.listItem:last-child {
+  border-bottom: none;
+}
+
+.listItem span {
+  flex: 1;
+  text-align: center;
+}
