@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
-import "../styles/EventCard.css";
+import style from "../styles/EventCard.module.css";
 
-const EventCard = ({ title, date, imgSrc, isNew }) => {
+const EventCard = ({ title, dateFrom, dateTo, imgSrc }) => {
   return (
-    <div className="event-card">
-      {isNew && <span className="new-badge">New</span>}
+    <div className={style.event_card}>
       <img src={imgSrc} alt={title} />
-      <h4>{title}</h4>
-      <p>{date}</p>
+      <div className={style.info}>
+        <span>{title}</span>
+        <p>{`${dateFrom} ~ ${dateTo}`}</p>
+      </div>
     </div>
   );
 };

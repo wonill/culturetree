@@ -1,29 +1,34 @@
 // import { Link } from "react-router-dom";
+// import EventCard from "../components/EventCard";
+import { useState, useEffect } from "react";
 import style from "../styles/BestEvents.module.css";
+import axios from "axios";
 import EventCard from "../components/EventCard";
 
 const BestEvents = () => {
-  const events = [
-    {
-      id: 1,
-      title: "Event A",
-      date: "June 25, Venue: Theater X",
-      imgSrc: "https://via.placeholder.com/150", // 공연 이미지 URL
-      new: true,
-    },
-    {
-      id: 2,
-      title: "Event B",
-      date: "July 10, Venue: Hall Y",
-      imgSrc: "https://via.placeholder.com/150", // 공연 이미지 URL
-    },
-    {
-      id: 3,
-      title: "Title",
-      date: "Date",
-      imgSrc: "https://via.placeholder.com/150", // 공연 이미지 URL
-    },
-  ];
+  const [events, setEvents] = useState([]);
+  //   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const callApi = async () => {
+      try {
+        // setLoading(true);
+        const res = await axios.get("http://localhost:5000/api/");
+        setEvents(res.data.dbs.db);
+      } catch (e) {
+        console.error(e);
+        setError("데이터를 불러오는 데 실패했습니다.");
+      } finally {
+        // setLoading(false);
+      }
+    };
+
+    callApi();
+  }, []);
+
+  //   if (loading) return <div>로딩 중...</div>;
+  if (error) return <div>에러: {error}</div>;
 
   return (
     <div className={style.best_events}>
@@ -31,11 +36,11 @@ const BestEvents = () => {
       <div>
         {events.map((event) => (
           <EventCard
-            key={event.id}
-            title={event.title}
-            date={event.date}
-            imgSrc={event.imgSrc}
-            isNew={event.new}
+            key={event.mt20id}
+            title={event.prfnm}
+            dateFrom={event.prfpdfrom}
+            dateTo={event.prfpdto}
+            imgSrc={event.poster}
           />
         ))}
       </div>
