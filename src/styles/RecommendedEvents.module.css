@@ -1,0 +1,65 @@
+.recommendedEventsContainer {
+  text-align: center;
+  padding: 6rem 0 10rem;
+}
+
+.title {
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.genreTabs {
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.genreTabs button {
+  border: solid 1px var(--gray);
+  margin: 0 10px;
+  padding: 10px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+.genreTabs .activeTab {
+  background-color: var(--purple);
+  font-weight: bold;
+  color: white;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.2s;
+  width: 15rem;
+  height: 23rem;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardTitle {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}

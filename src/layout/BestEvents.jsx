@@ -1,5 +1,4 @@
 // import { Link } from "react-router-dom";
-// import EventCard from "../components/EventCard";
 import { useState, useEffect } from "react";
 import style from "../styles/BestEvents.module.css";
 import axios from "axios";
@@ -15,7 +14,8 @@ const BestEvents = () => {
       try {
         // setLoading(true);
         const res = await axios.get("http://localhost:5000/api/");
-        setEvents(res.data.dbs.db);
+        console.log("베스트공연", res.data.dbs.db);
+        setEvents(res.data.dbs.db.slice(3));
       } catch (e) {
         console.error(e);
         setError("데이터를 불러오는 데 실패했습니다.");
@@ -32,7 +32,7 @@ const BestEvents = () => {
 
   return (
     <div className={style.best_events}>
-      <h3 className={style.title}>베스트 공연</h3>
+      <h2 className={style.title}>베스트 공연</h2>
       <div>
         {events.map((event) => (
           <EventCard
