@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import style from "../styles/SmallCard.module.css"; // 스타일 시트
+import style from "../styles/SmallCard.module.css";
 
 const SmallCard = ({ title, dateFrom, dateTo, imgSrc, facility }) => {
   return (
