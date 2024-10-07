@@ -8,9 +8,7 @@ const SmallCard = ({ title, dateFrom, dateTo, imgSrc, facility }) => {
       <div className={style.cardContent}>
         <h2 className={style.cardTitle}>{title}</h2>
         <p className={style.cardFacility}>{facility}</p>
-        <p className={style.cardDate}>
-          {dateFrom} - {dateTo}
-        </p>
+        <p className={style.cardDate}>{`${dateFrom} ~ ${dateTo}`}</p>
       </div>
     </div>
   );

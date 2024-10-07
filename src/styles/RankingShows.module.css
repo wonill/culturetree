@@ -3,22 +3,3 @@
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-
-.showCard {
-  flex: 1;
-  margin: 0 10px;
-  text-align: center;
-  border: 1px solid var(--gray);
-  padding: 10px;
-  background-color: white;
-}
-
-.showImage {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.cardTitle {
-  font-weight: bold;
-  margin: 10px 0;
-}

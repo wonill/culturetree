@@ -5,15 +5,14 @@
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   margin: 3rem 0;
 }
 
 .navButton {
   background-color: white;
   border: 1px solid var(--gray);
-  width: 10rem;
   height: 4rem;
   cursor: pointer;
   transition: background-color 0.3s;
